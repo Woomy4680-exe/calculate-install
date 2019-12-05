@@ -7,6 +7,7 @@
 <body>
 <h1>L'installation:</h1>
 <p>Avant de pouvoir utiliser la distro, il faudra bien évidemment l'installer.</p>
+
 <h4>Première étape: Choisir sa version:</h4>
 <p>Il va faloir chosir un de sur le site de calculate prenez un DE classique ou une calculate scratch^^.</p>
 <p>Petite astuce: téléchargez l'iso sur :miroir.linuxtricks.fr dans les génération périodiques</p>
@@ -40,15 +41,15 @@
     <li>Un swap d'environ 8Go</li>
     <li>Une partition Root avec le reste du dique.</li>
 </ul> 
-<p>Pour changer le type de la partition swap et efi allez sur la partition et sélectionnez type et cherchez EFI ou Système de fichiers d'échange</p>
+<p>Pour changer le type de la partition swap et efi allez sur la partition et sélectionnez type et cherchez système EFI ou partition d'échange linux</p>
 <p>laissez toutes vos partition en primaire</p> 
- <p>/!\ je conseille environ 50go pour la partition root si vous avec la place</p>
 <p>/!\ si vous avez plus de16Go de RAM un swap de 2Go suffit</p>
 <h3>Installer le système:</h3>
 <p>Lancez un termnal en root</p>
 <p>(si vous préférez l'install graphique allez-y)</p>
-<p>Tapez cl-install -d:(votre partition root ex: /dev/sda1) -d:(votre swap):swap  -u:Votrenomd'utilisateur </p>
-<p>Exemple de commande: cl-install -d:/dev/sda1 -d:/dev/sda2:swap -u:woomytuto </p>
+<p>Tapez cl-install -d (votre partition root ex: /dev/sda1) -d (votre swap):swap  -u Votrenomd'utilisateur </p>
+<p>Exemple de commande: cl-install -d /dev/sda1 -d /dev/sda2:swap -u woomytuto </p>
+<p>Pour changer d'autres parties de l'installation référez vous a cl-install --help</p>
 
 <p>Il va vous demandez un mot de passe, entrez le </p>
 <p>Voilà, calculate s'installe, vous pouvez aller prendre un café^^.</p>
