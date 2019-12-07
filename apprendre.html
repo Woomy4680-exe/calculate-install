@@ -40,14 +40,16 @@
 nano /etc/portage/package.keywords/newkernel </p>
 <p>Une fois dedans tapez : sys-kernel/calculate-sources </p>
 <p>Faites un controle+O sauvegardez et quittez avec control+x</p>
-<p>Mettez à jour le système avec cl-update.</p>
+<p>Mettez à jour le système avec cl-update -o.</p>
 
+<h2>Rajouter un overlay avec Layman</h2>
+<p>Si vous souhaitez installer des programmes supplémentaires ou autres, il sera peut être nécaissaire d'installer un overlay même si vous ne souhaitez pas le faire je vous conseille l'adrien overlay qui est très utile .</p>
+<p>Pour installer un overlay</p>
+<p>curl https://raw.githubusercontent.com/aaaaadrien/adrien-overlay/master/repositories.xml (ou le lien qui vous sera donné)-o /etc/layman/overlays/adrien-overlay.xml ( le nom de l'overlay avant le .xml)</p>
 
-
-
-
-
-
+<p>layman -S</p>
+<p>layman -a adrien-overlay(ou le nom de l'overlay)</p>
+<p>Note pour l'adrien overlay : après l'installation, lancez cette commande : cl-core-variables --set update.cl_update_other_set=on </p>
 
 </body>
 </html>
