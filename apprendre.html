@@ -14,6 +14,38 @@
 <p>emerge (nom de l'app)</p>
 <h4>Pour la désinstaller:</h4>
 <p>emerge -C( majuscule essentielle) (nom de l'app)</p>
+<h4>Pour la mettre à jour:</h4>
+<p>emerge -U (nom de l'app)</p>
+<p>Exemples:</p>
+<ul>
+	<li>emerge libreoffice</li>
+    <li>emerge -C libreoffice</li>
+    <li>emerge -U sys-kernel/calculate-sources</li>
+    
+</ul>
+
+
+
+
+<h2>Mise a jour du système avec les outils calculate.</h2>
+<h4>Lancer la mise a jour du système:</h4>
+<p>Lancez un terminal en root et tapez : cl-update -o </p>
+<p>Attendez, cela prendra un certain temps la première fois.</p>
+<p>Je conseille de lancer la mise à jour une fois par semaine.</p>
+<p>Une fois la mise à jour terminée vous pouvez redémarrer si néçaissaire ( si vous avez mis à jour le kernel)(si le kernel a été mis à jour, il est préférable de relancer la mise à jour après quelques redémarrage pour supprimer l'ancien noyau) </p>
+
+<h2>Changer la version de son kernel vers la dernière avec les package keywords</h2>
+<p>Si vous souhaitez passer sur le dernier kernel disponible, rien de plus simple:</p>
+<p>Lancez un terminal en root et mettez a jour le système. Apres ça tappez la commande suivante:
+nano /etc/portage/package.keywords/newkernel </p>
+<p>Une fois dedans tapez : sys-kernel/calculate-sources </p>
+<p>Faites un controle+O sauvegardez et quittez avec control+x</p>
+<p>Mettez à jour le système avec cl-update.</p>
+
+
+
+
+
 
 
 
