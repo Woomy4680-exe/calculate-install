@@ -20,10 +20,9 @@
 <ul>
 	<li>emerge libreoffice</li>
     <li>emerge -C libreoffice</li>
-    <li>emerge -U sys-kernel/calculate-sources</li>
+    <li>emerge -U sys-apps/flatpak</li>
     
 </ul>
-
 
 
 
@@ -50,6 +49,16 @@ nano /etc/portage/package.keywords/newkernel </p>
 <p>layman -S</p>
 <p>layman -a adrien-overlay(ou le nom de l'overlay)</p>
 <p>Note pour l'adrien overlay : après l'installation, lancez cette commande : cl-core-variables --set update.cl_update_other_set=on </p>
+<p>Voila, l'overlay est maintenant installé ;-}</p>
+<h2>Rajouter un dépot flatpak pour installer plus d'applications:</h2>
+<p>La première étape sera d'installer l'adrien-overlay comme marqué au dessus.</p>
+<p>Après, vous aurez juste a lancer cette commande : emerge sys-apps/flatpak puis installer le dépot flathub avec cette autre commande: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo  et a reboot votre pc.</p>
+
+
+
+
+
+
 
 </body>
 </html>
