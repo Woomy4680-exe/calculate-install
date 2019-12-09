@@ -52,9 +52,43 @@ nano /etc/portage/package.keywords/newkernel </p>
 <p>Voila, l'overlay est maintenant installé ;-}</p>
 <h2>Rajouter un dépot flatpak pour installer plus d'applications:</h2>
 <p>La première étape sera d'installer l'adrien-overlay comme marqué au dessus.</p>
-<p>Après, vous aurez juste a lancer cette commande : emerge sys-apps/flatpak puis installer le dépot flathub avec cette autre commande: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo  et a reboot votre pc.</p>
+<p>Après, vous aurez juste a lancer cette commande : emerge sys-apps/flatpak puis installer le dépot flathub avec cette autre commande: flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo s et a reboot votre pc.</p>
+<h2>Gestion des services avec OpenRC. </h2>
+<p>Etant donné que SystemD n'est pas présent sous calculate linux, tout les services se gèrent avec OpenRC .</p>
+<h4>Pour activer un service au démarrage:</h4>
+<p>rc-update add $service default</p>
+<p>Ex: rc-update add sshd default</p>
+<h4>Pour désactiver un service au démarrage:</h4>
+<p>rc-update del $service default </p>
+<p>Ex: rc-update del sshd default </p>
+<h4>Lancer un service</h4>
+<p>/etc/init.d/$service start</p>
+<p>Ex: /etc/init.d/sshd start</p>
+<h4>Stopper un service</h4>
+<p>/etc/init.d/$service stop</p>
+<p>Ex:/etc/init.d/sshd stop </p>
+<h4>Relancer un service:</h4>
+<p>/etc/init.d/$service restart</p>
+<p>Ex: /etc/init.d/sshd restart</p>
+<h4>Reload un service ( recharger la config sans le stopper)</h4>
+<p>/etc/init.d/$service reload </p>
+<p>Ex: /etc/init.d/sshd reload</p>
+<h4>Obtenir le statut d'un service:</h4>
+<p>/etc/init.d/$service status</p>
+<p>Ex: /etc/init.d/sshd status</p>
 
+<h1>Parties en travaux :(faites une issue si vous voulez m'aidez)</h1>
+<ul>
+	<li>Compilation du kernel avec cl-kernel</li>
+<li>finir openrc</li>
+<li>Gestion avancée des logiciels</li>
+<li>Présentation poussée des outils calculate</li>
+<li>Installer les DE en version minimale avec une CLS</li>
+<li>Migrer sur calculate depuis gentoo</li>
+<li>Rajouter des vidéos sur tous les sujets.</li>
+</ul>
 
+20191204T214502Z
 
 
 
