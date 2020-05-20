@@ -1,0 +1,12 @@
+{
+  "name": "cls-install-guide",
+  "version": "1.0.0",
+  "description": "Un guide d'install pour calculate linux",
+  "main": "server.js",
+  "author": "Woomy4680-exe",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
