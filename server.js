@@ -9,6 +9,3 @@ app.listen(process.env.PORT || 3000, async () => {
 });
 
 app.use(express.static(__dirname + '/assets'));
-app.get('/', async (req, res) => {
-    res.sendFile(`${path.join(__dirname, `./assets/index.html`)}`)
-});
