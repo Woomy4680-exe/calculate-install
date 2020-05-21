@@ -5,3 +5,17 @@ p, h1, h2, h3, h4, h5, a {
 html{
     background-color: black;
 }
+.rufusdlbutton {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: greenyellow;
+    border: solid 2px greenyellow;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.rufusdlbutton:hover{
+    background: greenyellow;
+    color: white;
+}
