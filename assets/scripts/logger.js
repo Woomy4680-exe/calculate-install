@@ -1,2 +1,2 @@
 //Basic logger script for debug
-console.log(`Javascript loaded`)
+console.log("Javascript loaded");
