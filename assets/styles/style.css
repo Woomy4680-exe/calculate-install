@@ -1,7 +1,9 @@
-p, h1, h2, h3, h4, h5, a { 
+p, h1, h2, h3, h4, h5, a, li { 
     color: white;
 }
-
+warning {
+    color: red;
+}
 html{
     background-color: black;
 }
