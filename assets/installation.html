@@ -22,7 +22,7 @@
     <h3>Partitionner les disques</h3>
     <p>Avant d'installer Calculate, il faut bien évidemment partitionner les disques <strong>manuellement</strong></p>
     <p>Si vous souhaitez faire du LVM, il faudra lancer les services LVM avec <code id="lvservices">/etc/init.d/lvm start && /etc/init.d/lvmetad start</code></p>
-   
+    <warning>N'oubliez pas (évidemment) de faire la partition EFI si nécéssaire et de passer la partition de boot (hors du LVM) en bootable(avec CFDISK) </warning>
    
    
     <script src="scripts/install.js" type="text/javascript"></script>
