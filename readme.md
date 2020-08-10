@@ -1,1 +1,0 @@
-# A basic calculate Linux install guide
