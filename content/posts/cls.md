@@ -16,7 +16,7 @@ Il est recommandé de vérifier l'iso afin de ne pas avoir de mauvaises surprise
 
 ## Créer une clé USB bootable de Calculate
 
-Pour toutes les plateformes, je conseille Ventoy, qui vous permettra d'installer plusieurs isos sur la clé et d'utiliser son espace pour vos données.
+Pour toutes les plateformes, je conseille [Ventoy](https://www.ventoy.net/en/index.html), qui vous permettra d'installer plusieurs isos sur la clé et d'utiliser son espace pour vos données.
 
 Si vous êtes sous Windows: Vous pouvez utiliser [rufus](https://rufus.ie), ne disposant pas de windows sous la main, je vous redirige vers [ce tutoriel](https://lecrabeinfo.net/creer-une-cle-usb-bootable-avec-rufus.html)
 
