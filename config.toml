@@ -1,4 +1,4 @@
-baseURL = "https://woomy4680-exe.github.io/Calculate-install"
+baseURL = "https://woomy4680-exe.github.io/calculate-install"
 languageCode = "fr-fr"
 title = "Installer calculate GNU/Linux"
 theme = "PaperMod"
@@ -6,4 +6,4 @@ theme = "PaperMod"
 Title = "Plop 👋"
 Content = "Guide d'installation de Calculate GNU/Linux"
 [params]
-socialIcons = [ { name = "github", url = "https://github.com/Woomy4680-exe/Calculate-install" } ]
+socialIcons = [ { name = "github", url = "https://github.com/Woomy4680-exe/calculate-install" } ]
