@@ -14,3 +14,10 @@ L'image ISO de Calculate peut être récupérée sur n'importe quel miroir, [voi
 
 Il est recommandé de vérifier l'iso afin de ne pas avoir de mauvaises surprises durant l'installation.
 
+## Créer une clé USB bootable de Calculate
+
+Pour toutes les plateformes, je conseille Ventoy, qui vous permettra d'installer plusieurs isos sur la clé et d'utiliser son espace pour vos données.
+
+Si vous êtes sous Windows: Vous pouvez utiliser [rufus](https://rufus.ie), ne disposant pas de windows sous la main, je vous redirige vers [ce tutoriel](https://lecrabeinfo.net/creer-une-cle-usb-bootable-avec-rufus.html)
+
+Si vous êtes sur GNU/Linux, vous pouvez utiliser dd, `man dd` est votre meilleur ami.
