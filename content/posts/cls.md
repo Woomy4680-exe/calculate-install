@@ -120,8 +120,6 @@ Voici une liste (en vrac) des autres options qui pourrait vous intérésser:
 
 `--grub-passwd`: Sert à protéger GRUB à l'aide du mot de passe root, ceci peut être un gros plus niveau sécurité, pour éviter que quelqu'un puisse, par exemple, utiliser `init=/bin/bash` afin d'obtenir un accès root à votre système.
 
-`-C`: Sert à chiffrer le dossier "home" des utilisateurs à l'aide d'EcryptFs. NOTE: Le mot de passe sera le même que celui de l'utilistauer de ce home. Le dossier home sera automatiquement monté au login grace à PAM.
-
 `-a`: L'argument "OFF" permet de désactiver la vérification automatique de mises à jour.
 
 `--hostname`: Permet de modifier le nom d'autre de votre système.
@@ -132,3 +130,8 @@ Voici une liste (en vrac) des autres options qui pourrait vous intérésser:
 
 L'installation sera ensuite lancée, les mots de passe des utilisateurs respectifs seront demandés et l'installation vous informera sur les paramètres. A ce moment ci, noubliez pas de vérifier que la partiton EFI a bien été correctement reconnue et que il n'y a pas d'autres problèmes. Répondez ensuite "yes" et Calculate sera installée sur votre disque. L'installation dure quelques minutes, selon la rapidité de votre disque dur. Une fois terminée, confirmer le rédémarrage afin de terminer l'installation.
 
+## Post-installation
+
+Une fois Calculate installée, la premier redémarrage peut prendre du temps, en effet, une partie de la configuration système se termine. Je vous recommande redémarrer une denière fois.
+
+> Note: Si vous ne pouvez pas démarrer sur un autre Os, c'est normal. Je rencontre aussi ce problème lors du premier démarrage. Après le premier reboot, les autres Os devraient redevenir visibles.
