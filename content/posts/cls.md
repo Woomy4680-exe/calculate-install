@@ -135,3 +135,6 @@ L'installation sera ensuite lancée, les mots de passe des utilisateurs respecti
 Une fois Calculate installée, la premier redémarrage peut prendre du temps, en effet, une partie de la configuration système se termine. Je vous recommande redémarrer une denière fois.
 
 > Note: Si vous ne pouvez pas démarrer sur un autre Os, c'est normal. Je rencontre aussi ce problème lors du premier démarrage. Après le premier reboot, les autres Os devraient redevenir visibles.
+
+Afin de configurer votre système au mieux, je vous recommande de lire [cet article](/calculate-install/posts/postinstall).
+
