@@ -86,3 +86,23 @@ Si vous dualbootez avec une autre distribution GNU/Linux, vous **pouvez** choisi
 
 Vous pouvez utiliser `cfdisk` ou `fdisk` pour partitionner vos disques, tout deux sont fournis par défaut dans le LiveCD.
 
+### Vérifier que tout est OK
+
+Utilisez `fdisk -l` une fois que vos partitions sont créées afin de vérifier que chaque partition à la bonne taille, le bon type,...
+
+## Installer le système Calculate
+
+L'installation de Calculate se déroule à l'aide de `cl-install`. Ce guide vous informera sur quelques options mais je vous recommande d'utiliser `cl-install --help` afin d'obtenir les informations les plus à jour sur le fonctionnement de l'installeur.
+
+### Ajouter les disques
+
+L'option `-d` permet d'ajouter un disque, elle s'utilise comme ceci: `-d /dev/disque:MP:FS:FORMAT`. Les options "MP", "FS" et "FORMAT" ne sont pas toujours requises.
+
+Pour ajouter la partition racine, utilisez `-d /dev/mapartitionroot`. Si vous sohaitez changer le système de fichier de la partition, (pour par exemple utiliser BTRFS), vous devrez utiliser `-d /dev/mapartitionroot:/:btrfs:yes`
+
+Par exemple: `-d /dev/sda2:/:btrfs:yes`
+
+Pour le reste des partitions, ça reste assez simple, par exemple pour ajouter un `/home` et le formatter: `-d /dev/sdX:/home:btrfs:yes`. Pour ajouter le swap: `-d /dev/sdX:swap`
+
+> NOTE: La partition EFI ne **doit pas** être ajoutée manuellement, l'installeur de Calculate la cherchera tout seul.
+
