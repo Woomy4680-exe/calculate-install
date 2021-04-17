@@ -106,3 +106,29 @@ Pour le reste des partitions, ça reste assez simple, par exemple pour ajouter u
 
 > NOTE: La partition EFI ne **doit pas** être ajoutée manuellement, l'installeur de Calculate la cherchera tout seul.
 
+### Ajouter des utilisateurs
+
+Pour ajouter un utilisateur, utilisez `-u`, par exemple: `-u woomy:yes` afin que l'utilsateur dispose aussides droits d'admin.
+
+### Configuration des locales
+
+L'option `-l` sert à configurer les locales. L'argument "list" permet de les lister. L'option `-k` fonctionne de la même manière, mais pour les keymaps. Par défaut, les paramètres sont ceux du live CD, qui ont été configurés au boot à l'aide de GRUB.
+
+### Autres options utiles
+
+Voici une liste (en vrac) des autres options qui pourrait vous intérésser:
+
+`--grub-passwd`: Sert à protéger GRUB à l'aide du mot de passe root, ceci peut être un gros plus niveau sécurité, pour éviter que quelqu'un puisse, par exemple, utiliser `init=/bin/bash` afin d'obtenir un accès root à votre système.
+
+`-C`: Sert à chiffrer le dossier "home" des utilisateurs à l'aide d'EcryptFs. NOTE: Le mot de passe sera le même que celui de l'utilistauer de ce home. Le dossier home sera automatiquement monté au login grace à PAM.
+
+`-a`: L'argument "OFF" permet de désactiver la vérification automatique de mises à jour.
+
+`--hostname`: Permet de modifier le nom d'autre de votre système.
+
+`--dns`: Permet de changer de serveur dns pour, par exemple, utiliser ceux de [Quad9](https://quad9.net)
+
+### Début de l'installation
+
+L'installation sera ensuite lancée, les mots de passe des utilisateurs respectifs seront demandés et l'installation vous informera sur les paramètres. A ce moment ci, noubliez pas de vérifier que la partiton EFI a bien été correctement reconnue et que il n'y a pas d'autres problèmes. Répondez ensuite "yes" et Calculate sera installée sur votre disque. L'installation dure quelques minutes, selon la rapidité de votre disque dur. Une fois terminée, confirmer le rédémarrage afin de terminer l'installation.
+
