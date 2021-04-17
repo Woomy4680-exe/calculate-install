@@ -21,3 +21,13 @@ Pour toutes les plateformes, je conseille [Ventoy](https://www.ventoy.net/en/ind
 Si vous êtes sous Windows: Vous pouvez utiliser [rufus](https://rufus.ie), ne disposant pas de windows sous la main, je vous redirige vers [ce tutoriel](https://lecrabeinfo.net/creer-une-cle-usb-bootable-avec-rufus.html)
 
 Si vous êtes sur GNU/Linux, vous pouvez utiliser dd, `man dd` est votre meilleur ami.
+
+## Démarrer Calculate
+
+Démarrez Calculate et martyrisant la touche pour accéder a votre boot menu. GRUB apparait ensuite.
+![GRUB](/calculate-install/cls_grub.png)
+
+A ce moment, vous pouvez configurer certaines choses avant de démarrer le livecd. Je vous recommande déjà de vous rendre dans "Timezone Selection" et "Language Selection" qui permettront de ne pas avoir de soucis de timezone / clavier dans le LiveCD.
+
+> NOTE: Vous pouvez également changer les autres options si vous recontrez des problèmes avec le livecd.
+
