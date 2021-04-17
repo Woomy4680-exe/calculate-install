@@ -50,6 +50,8 @@ nmcli d wifi connect <réseau>
 nmcli d wifi connect <réseau> password <monsupermotdepasse>
 ```
 
+Vous pouvez ensuite vérifier que tout est fonctionnel en utilisant, par exemple, `ping github.com`.
+
 ### Lancer un serveur SSH
 
 Lancer un serveur SSH est plutôt simple. Il vous suffit d'utiliser `rc-service sshd start` et le tour est joué. Si vous souhaitez modifier certaines configurations de SSH dans `/etc/ssh/sshd_config` et relancer le service avec `rc-service sshd restart`
