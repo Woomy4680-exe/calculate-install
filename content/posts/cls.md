@@ -31,3 +31,30 @@ A ce moment, vous pouvez configurer certaines choses avant de démarrer le livec
 
 > NOTE: Vous pouvez également changer les autres options si vous recontrez des problèmes avec le livecd.
 
+## (Optionnel) Obtenir du réseau sur le LiveCD et lancer un serveur SSH
+
+Si vous souhaitez utiliser SSH pour installer votre système, vous devez d'abbord configurer le réseau.
+
+### Configurer le réseau
+
+Si vous disposez d'une connection filaire, le réseau est censé être déjà configuré et prêt à l'emploit. Dans le cas contraire, utilisez la commande `cl-setup-network` comme décrite dans l'acceuil du LiveCD.
+
+Si vous utilisez du wifi, la configuration reste plutôt simple. `nmcli` est déjà disponible sur le live et peut être utilisée de cette manière:
+
+```bash
+# Obtenir la liste des réseaux disponibles
+nmcli d wifi list
+# Se connecter à <réseau>
+nmcli d wifi connect <réseau>
+# Se connecter à <réseau> avec un mot de passe
+nmcli d wifi connect <réseau> password <monsupermotdepasse>
+```
+
+### Lancer un serveur SSH
+
+Lancer un serveur SSH est plutôt simple. Il vous suffit d'utiliser `rc-service sshd start` et le tour est joué. Si vous souhaitez modifier certaines configurations de SSH dans `/etc/ssh/sshd_config` et relancer le service avec `rc-service sshd restart`
+
+### Se connecter à la machine
+
+Vous pouvez obtenir l'ip de la machine avec `ip a` et vous connecter ensuite en ssh avec l'utilisateur `root`. Le mot de passe par défaut de celui-ci est "root" mais il peut être changé avec `passwd`.
+
