@@ -21,7 +21,8 @@ jobs:
 
       - name: Build
         run: hugo --minify
-
+      - name: Setup CNAME
+        run: 'echo calculate-install.woomy.ovh >> public/CNAME'
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
